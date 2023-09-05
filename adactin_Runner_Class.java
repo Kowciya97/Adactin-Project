@@ -110,20 +110,20 @@ public class adactin_Runner_Class extends Base_Class_1 {			// using extends to c
 		
 		// Get Extent Report
 		
-        ExtentSparkReporter htmlReporter = new ExtentSparkReporter("./ExtentReport_1.html");
+        	ExtentSparkReporter htmlReporter = new ExtentSparkReporter("./ExtentReport_1.html");
         
-        ExtentReports extent = new ExtentReports();
-        extent.attachReporter(htmlReporter);
+        	ExtentReports extent = new ExtentReports();
+        	extent.attachReporter(htmlReporter);
         
-        ExtentTest test = extent.createTest("Adactin Hotel Application", "Test to validate hotel submission");
+        	ExtentTest test = extent.createTest("Adactin Hotel Application", "Test to validate hotel submission");
         
-        test.log(Status.INFO, "Starting Test Case");
-        test.pass("Navigated to adactin.com");
-        test.pass("Booking Confirmation");
-        test.info("Test Completed");
-        extent.flush();
+        	test.log(Status.INFO, "Starting Test Case");
+        	test.pass("Navigated to adactin.com");
+        	test.pass("Booking Confirmation");
+        	test.info("Test Completed");
+        	extent.flush();
         
-        ScreenRecorderUtil.stopRecord();								// To stop the screen recorder
+        	ScreenRecorderUtil.stopRecord();								// To stop the screen recorder
            
 	}
 }
